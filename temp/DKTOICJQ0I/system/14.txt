@@ -1,0 +1,3 @@
+Vector-based Models of Semantic Composition Abstract This paper proposes a framework for representing the meaning of phrases and sentences in vector space.
+Under this framework, we introduce a wide range of composition models which we evaluate empirically on a sentence similarity task.
+Mitchell and Lapata (2008) propose a framework to represent the meaning of the combination p + a as a function f operating on four components: c = f(p, a, R, K) (3) R is the relation holding between p and a, and K is additional knowledge.

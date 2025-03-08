@@ -1,0 +1,3 @@
+A Novel Use of Statistical Parsing to Extract Information from Text Abstract Since 1995, a few statistical parsing algorithms have demonstrated a breakthrough in parsing accuracy, as measured against the UPenn TREEBANK as a gold standard.
+In this paper we report adapting a lexic al ized, probabilistic context-free parser to information extraction and evaluate this new technique on MUC-7 template elements and template relations.
+The basic approach we described is very similar to the one presented in (Miller et al., 2000); however, there are a few major differences: in our approach, the augmentation of the syntactic tags with semantic tags is straightforward due to the fact that the semantic constituents are matched exactly.

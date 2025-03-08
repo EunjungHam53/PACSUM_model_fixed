@@ -1,0 +1,15 @@
+Exploiting Diversity in Natural Language Processing: Combining Parsers Abstract Three state-of-the-art statistical parsers are combined to produce more accurate parses, as well as new bounds on achievable Treebank parsing accuracy.
+Two general approaches are presented and two combination techniques are described for each approach.
+Both parametric and non-parametric models are explored.
+The resulting parsers surpass the best previously published performance results for the Penn Treebank.
+Conclusion We have presented two general approaches to studying parser combination: parser switching and parse hybridization.
+For each experiment we gave an nonparametric and a parametric technique for combining parsers.
+All four of the techniques studied result in parsing systems that perform better than any previously reported.
+Both of the switching techniques, as well as the parametric hybridization technique were also shown to be robust when a poor parser was introduced into the experiments.
+Through parser combination we have reduced the precision error rate by 30% and the recall error rate by 6% compared to the best previously published result.
+Combining multiple highly-accurate independent parsers yields promising results.
+We plan to explore more powerful techniques for exploiting the diversity of parsing methods.
+1 Introduction Henderson and Brill (1999) showed that independent human research efforts produce parsers that can be combined for an overall boost in accuracy.
+The collection of hypotheses ti = fi (Stest) using the unweighted constituent voting scheme of Henderson and Brill (1999) 5 (Henderson and Brill, 1999) used a similar framework in the context of constituent parsing and only three base parsers.
+A successful application of voting and of a stacked classifier to constituent parsing followed in (Henderson and Brill, 1999).
+This approach roughly corresponds to (Henderson and Brill, 1999)'s Naïve Bayes parse hybridization.

@@ -1,0 +1,25 @@
+KenLM: Faster and Smaller Language Model Queries Abstract We present KenLM, a library that implements two data structures for efficient language model queries, reducing both time and costs.
+The structure uses linear probing hash tables and is designed for speed.
+Compared with the widely- SRILM, our is 2.4 times as fast while using 57% of the mem- The structure is a trie with bit-level packing, sorted records, interpolation search, and optional quantization aimed lower memory consumption.
+simultaneously uses less memory than the smallest lossless baseline and less CPU than the baseline.
+Our code is thread-safe, and integrated into the Moses, cdec, and Joshua translation systems.
+This paper describes the several performance techniques used and presents benchmarks against alternative implementations.
+Future Work There any many techniques for improving language model speed and reducing memory consumption.
+For speed, we plan to implement the direct-mapped cache from BerkeleyLM.
+Much could be done to further reduce memory consumption.
+Raj and Whittaker (2003) show that integers in a trie implementation can be compressed substantially.
+Quantization can be improved by jointly encoding probability and backoff.
+For even larger models, storing counts (Talbot and Osborne, 2007; Pauls and Klein, 2011; Guthrie and Hepple, 2010) is a possibility.
+Beyond optimizing the memory size of TRIE, there are alternative data structures such as those in Guthrie and Hepple (2010).
+Finally, other packages implement language model estimation while we are currently dependent on them to generate an ARPA file.
+While we have minimized forward-looking state in Section 4.1, machine translation systems could also benefit by minimizing backward-looking state.
+For example, syntactic decoders (Koehn et al., 2007; Dyer et al., 2010; Li et al., 2009) perform dynamic programming parametrized by both backward- and forward-looking state.
+If they knew that the first four words in a hypergraph node would never extend to the left and form a 5-gram, then three or even fewer words could be kept in the backward state.
+This information is readily available in TRIE where adjacent records with equal pointers indicate no further extension of context is possible.
+Exposing this information to the decoder will lead to better hypothesis recombination.
+Generalizing state minimization, the model could also provide explicit bounds on probability for both backward and forward extension.
+This would result in better rest cost estimation and better pruning.10 In general, tighter, but well factored, integration between the decoder and language model should produce a significant speed improvement.
+Conclusion We have described two data structures for language modeling that achieve substantial reductions in time and memory cost.
+The PROBING model is 2.4 times as fast as the fastest alternative, SRILM, and uses less memory too.
+The TRIE model uses less memory than the smallest lossless alternative and is still faster than SRILM.
+These performance gains transfer to improved system runtime performance; though we focused on Moses, our code is the best lossless option with cdec and Joshua.

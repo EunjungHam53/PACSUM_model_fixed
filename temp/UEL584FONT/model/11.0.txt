@@ -1,0 +1,24 @@
+Instance Weighting Discriminative Instance Weighting for Domain Adaptation in Statistical Machine Translation Abstract We describe a new approach to SMT adaptation that weights out-of-domain phrase pairs according to their relevance to the target domain, determined by both how similar to it they appear to be, and whether they belong to general language or not.
+This extends previous work on discriminative weighting by using a finer granularity, focusing on the properties of instances rather than corpus components, and using a simpler training procedure.
+We incorporate instance weighting into a mixture-model framework, and find that it yields consistent improvements over a wide range of baselines.
+Conclusion In this paper we have proposed an approach for instance-weighting phrase pairs in an out-of-domain corpus in order to improve in-domain performance.
+Each out-of-domain phrase pair is characterized by a set of simple features intended to reflect how useful it will be.
+The features are weighted within a logistic model to give an overall weight that is applied to the phrase pair’s frequency prior to making MAP-smoothed relative-frequency estimates (different weights are learned for each conditioning direction).
+These estimates are in turn combined linearly with relative-frequency estimates from an in-domain phrase table.
+Mixing, smoothing, and instance-feature weights are learned at the same time using an efficient maximum-likelihood procedure that relies on only a small in-domain development corpus.
+We obtained positive results using a very simple phrase-based system in two different adaptation settings: using English/French Europarl to improve a performance on a small, specialized medical domain; and using non-news portions of the NIST09 training material to improve performance on the news-related corpora.
+In both cases, the instanceweighting approach improved over a wide range of baselines, giving gains of over 2 BLEU points over the best non-adapted baseline, and gains of between 0.6 and 1.8 over an equivalent mixture model (with an identical training procedure but without instance weighting).
+In future work we plan to try this approach with more competitive SMT systems, and to extend instance weighting to other standard SMT components such as the LM, lexical phrase weights, and lexicalized distortion.
+We will also directly compare with a baseline similar to the Matsoukas et al approach in order to measure the benefit from weighting phrase pairs (or ngrams) rather than full sentences.
+Finally, we intend to explore more sophisticated instanceweighting features for capturing the degree of generality of phrase pairs.
+Another popular task in SMT is domain adaptation (Foster et al., 2010).
+Domain knowledge also has the potential to improve open-text applications such as summarization (Ceylan et al., 2010) and machine translation (Foster et al., 2010).
+Research in Word Sense Disambiguation (Navigli, 2009, WSD), the task aimed at the automatic labeling of text with word senses, has been oriented towards domain text understanding for several years now.
+Yasuda et al.
+(2008) and Foster et al.
+(2010) ranked the sentence pairs in the general-domain corpus according to the perplexity scores of sentences, which are computed with respect to in-domain language models.
+However, such confounding factors do not affect the optimization algorithm, which works with a fixed set of phrase pairs, and merely varies.
+Our main technical contributions are as follows: Additionally to perplexity optimization for linear interpolation, which was first applied by Foster et al.
+(2010), we propose perplexity optimization for weighted counts (equation 3), and a modified implementation of linear interpolation.
+Also, we independently perform perplexity minimization for all four features of the standard SMT translation model: the phrase translation probabilities p(t|s) and p(s|t), and the lexical weights lex(t|s) and lex(s|t).
+Matsoukas et al.

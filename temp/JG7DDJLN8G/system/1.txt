@@ -1,0 +1,3 @@
+The first stage based on the unlabeled dependency parsing models described by McDonald and Pereira (2006) augmented with morphological features for a subset of the languages.
+Multilingual Dependency Analysis with a Two-Stage Discriminative Parser Abstract present a two-stage multilingual pendency parser and evaluate it on 13 diverse languages.
+Regarding the data-driven parsers, we have made use of MaltParser (Nivre et al., 2007b) and MST Parser (McDonald et al., 2006), two state-of-the-art dependency parsers representing two dominant approaches in data-driven dependency parsing, and that have been successfully applied to typologically different languages and treebanks (McDonald and Nivre, 2007).

@@ -1,0 +1,3 @@
+To simplify implementation, we instead opted for the pseudo-projective approach (Nivre and Nilsson, 2005), in which non-projective links are lifted upwards in the tree to achieve projectivity, and special trace labels are used to enable recovery of the non-projective links at parse time.
+For tree banks with non-projective trees, we use the pseudo-projective parsing technique to transform the tree bank into projective structures (Nivre and Nilsson, 2005).
+Pseudo-Projective Dependency Parsing Abstract In order to realize the full potential of dependency-based syntactic parsing, it is desirable to allow non-projective dependency structures.

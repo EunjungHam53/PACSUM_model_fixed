@@ -1,0 +1,20 @@
+Polylingual Topic Models Abstract Topic models are a useful tool for analyzing large text collections, but have previously been applied in only monolingual, or at most bilingual, contexts.
+Meanwhile, massive collections of interlinked documents in dozens of languages, such as Wikipedia, are now widely available, calling for tools that can characterize content in many languages.
+We introduce a polylingual topic model that discovers topics aligned across multiple languages.
+We explore the model’s characteristics using two large corpora, each with over ten different languages, and demonstrate its usefulness in supporting machine translation and tracking topic trends across languages.
+Conclusions We introduced a polylingual topic model (PLTM) that discovers topics aligned across multiple languages.
+We analyzed the characteristics of PLTM in comparison to monolingual LDA, and demonstrated that it is possible to discover aligned topics.
+We also demonstrated that relatively small numbers of topically comparable document tuples are sufficient to align topics between languages in non-comparable corpora.
+Additionally, PLTM can support the creation of bilingual lexica for low resource language pairs, providing candidate translations for more computationally intense alignment processes without the sentence-aligned translations typically used in such tasks.
+When applied to comparable document collections such as Wikipedia, PLTM supports data-driven analysis of differences and similarities across all languages for readers who understand any one language.
+This configuration is similar to PolyLDA (Mimno et al., 2009) or LinkLDA (Yano et al., 2009), such that utterances from different parties are treated as different languages or blog posts and comments pairs.
+Our particular model, LinkLDA, has been applied to a few NLP tasks such as simultaneously modeling the words appearing in blog posts and users who will likely respond to them (Yano et al., 2009), modeling topic-aligned articles in different languages (Mimno et al., 2009), and word sense induction (Brody and Lapata, 2009).
+(Mimno et al., 2009) retrieve a list of potential translations simply by selecting a small number N of the most probable words in both languages and then adding the Cartesian product of these sets for every topic to a set of candidate translations.
+Our Wikipedia-based topic similarity feature, w(f, e), is similar in spirit to polylingual topic models (Mimno et al.
+2009), but it is scalable to full bilingual lexicon induction.
+Of the English document and the second half of its aligned foreign language document (Mimno et al., 2009) Since the PLTM is not a contribution of this paper, we refer the interested reader to (Mimno et al., 2009) for more details.
+Evaluation Corpus: The automatic evaluation of cross-lingual coreference systems requires annotated data.
+10Mimno et al.
+(2009) showed that so long as the proportion of topically aligned to non-aligned documents exceeded 0.25, the topic distributions (as measured by mean Jensen-Shannon Divergence between distributions) did not degrade significantly.
+Similarly, Polylingual Topic Models (PLTM) (Mimno et al., 2009) generalized LDA to tuples of documents from multiple languages.
+Our baseline joint PLSA model (JPLSA) is closely related to the polylingual LDA model of (Mimno et al., 2009).

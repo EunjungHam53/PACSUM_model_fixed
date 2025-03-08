@@ -1,0 +1,3 @@
+Instance Weighting Discriminative Instance Weighting for Domain Adaptation in Statistical Machine Translation Abstract We describe a new approach to SMT adaptation that weights out-of-domain phrase pairs according to their relevance to the target domain, determined by both how similar to it they appear to be, and whether they belong to general language or not.
+The features are weighted within a logistic model to give an overall weight that is applied to the phrase pair’s frequency prior to making MAP-smoothed relative-frequency estimates (different weights are learned for each conditioning direction).
+Conclusion In this paper we have proposed an approach for instance-weighting phrase pairs in an out-of-domain corpus in order to improve in-domain performance.

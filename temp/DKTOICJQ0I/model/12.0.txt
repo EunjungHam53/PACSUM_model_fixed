@@ -1,0 +1,14 @@
+Pseudo-Projective Dependency Parsing Abstract In order to realize the full potential of dependency-based syntactic parsing, it is desirable to allow non-projective dependency structures.
+We show how a datadriven deterministic dependency parser, in itself restricted to projective structures, can be combined with graph transformation techniques to produce non-projective structures.
+Experiments using data from the Prague Dependency Treebank show that the combined system can handle nonprojective constructions with a precision sufficient to yield a significant improvement in overall parsing accuracy.
+This leads to the best reported performance for robust non-projective parsing of Czech.
+Conclusion We have presented a new method for non-projective dependency parsing, based on a combination of data-driven projective dependency parsing and graph transformation techniques.
+The main result is that the combined system can recover non-projective dependencies with a precision sufficient to give a significant improvement in overall parsing accuracy, especially with respect to the exact match criterion, leading to the best reported performance for robust non-projective parsing of Czech.
+Recent work by Nivre and Nilsson introduces a technique where the projectivization transformation is encoded in the nonterminals of constituents during parsing (Nivre and Nilsson, 2005).
+1 http://sourceforge.net/projects/mstparser Figure 1: CoNLL-X dependency tree Figure 2: Penn Treebank-style phrase structure tree KSDEP Sagae and Tsujii (2007)'s dependency parser, based on a probabilistic shift-reduce algorithm extended by the pseudo-projective parsing technique (Nivre and Nilsson, 2005).
+Bengoetxea and Gojenola (2010) discuss non-projective dependencies in Basque and show that the pseudo-projective transformation of Nivre and Nilsson (2005) improves accuracy for dependency parsing of Basque.
+For tree banks with non-projective trees, we use the pseudo-projective parsing technique to transform the tree bank into projective structures (Nivre and Nilsson, 2005).
+It uses graph transformation to handle non-projective trees (Nivre and Nilsson, 2005).
+To simplify implementation, we instead opted for the pseudo-projective approach (Nivre and Nilsson, 2005), in which non-projective links are lifted upwards in the tree to achieve projectivity, and special trace labels are used to enable recovery of the non-projective links at parse time.
+In O(n) time, producing a projective dependency graph satisfying conditions 1-4 in section 2.1, possibly after adding arcs (0, i, lr) for every node i ≠ 0 that is a root in the output graph (where lr is a special label for root modifiers).
+Nivre and Nilsson (2005) showed how the restriction to projective dependency graphs could be lifted by using graph transformation techniques to preprocess training data and post-process parser output, so-called pseudo-projective parsing.

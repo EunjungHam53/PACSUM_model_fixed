@@ -1,0 +1,3 @@
+Learning Dependency-Based Compositional Semantics Abstract Compositional question answering begins by mapping questions to logical forms, but training a semantic parser to perform this mapping typically requires the costly annotation of the target logical forms.
+(2011) proposed DCS for dependency-based compositional semantics, which represents a semantic parse as a tree with nodes representing database elements and operations, and edges representing relational joins.
+In this paper, we learn to map questions to answers via latent logical forms, which are induced automatically from question-answer pairs.

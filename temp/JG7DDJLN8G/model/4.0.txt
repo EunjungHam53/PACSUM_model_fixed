@@ -1,0 +1,15 @@
+Unsupervised Models for Named Entity Classification Collins Abstract This paper discusses the use of unlabeled examples for the problem of named entity classification.
+A large number of rules is needed for coverage of the domain, suggesting that a fairly large number of labeled examples should be required to train a classi- However, we show that the use of data can reduce the requirements for supervision to just 7 simple &quot;seed&quot; rules.
+The approach gains leverage from natural redundancy in the data: for many named-entity instances both the spelling of the name and the context in which it appears are sufficient to determine its type.
+We present two algorithms.
+The first method uses a similar algorithm to that of (Yarowsky 95), with modifications motivated by (Blum and Mitchell 98).
+The second algorithm extends ideas from boosting algorithms, designed for supervised learning tasks, to the framework suggested by (Blum and Mitchell 98).
+Conclusions Unlabeled examples in the named-entity classification problem can reduce the need for supervision to a handful of seed rules.
+In addition to a heuristic based on decision list learning, we also presented a boosting-like framework that builds on ideas from (Blum and Mitchell 98).
+The method uses a &quot;soft&quot; measure of the agreement between two classifiers as an objective function; we described an algorithm which directly optimizes this function.
+We are currently exploring other methods that employ similar ideas and their formal properties.
+Future work should also extend the approach to build a complete named entity extractor - a method that pulls proper names from text and then classifies them.
+The contextual rules are restricted and may not be applicable to every example, but the spelling rules are generally applicable and should have good coverage.
+The problem of &quot;noise&quot; items that do not fall into any of the three categories also needs to be addressed.
+Co-training has been used before in applications like word-sense disambiguation (Yarowsky, 1995), web page classification (Blum and Mitchell, 1998), and named entity identification (Collins and Singer, 1999).
+They also discuss an application of classifying web pages by using their method of mutually constrained models.

@@ -1,0 +1,15 @@
+Cascaded Linear Model A Cascaded Linear Model for Joint Chinese Word Segmentation and Part-of-Speech Tagging Abstract We propose a cascaded linear model for joint Chinese word segmentation and partof-speech tagging.
+With a character-based perceptron as the core, combined with realvalued features such as language models, the cascaded model is able to efficiently utilize knowledge sources that are inconvenient to incorporate into the perceptron directly.
+Experiments show that the cascaded model achieves improved accuracies on both segmentation only and joint segmentation and part-of-speech tagging.
+On the Penn Chinese Treebank 5.0, we obtain an error reduction of segmentation and joint segmentation and part-of-speech tagging over the perceptron-only baseline.
+Conclusions We proposed a cascaded linear model for Chinese Joint S&T.
+Under this model, many knowledge sources that may be intractable to be incorporated into the perceptron directly, can be utilized effectively in the outside-layer linear model.
+This is a substitute method to use both local and non-local features, and it would be especially useful when the training corpus is very large.
+However, can the perceptron incorporate all the knowledge used in the outside-layer linear model?
+If this cascaded linear model were chosen, could more accurate generative models (LMs, word-POS co-occurrence model) be obtained by training on large scale corpus even if the corpus is not correctly labelled entirely, or by self-training on raw corpus in a similar approach to that of McClosky (2006)?
+In addition, all knowledge sources we used in the core perceptron and the outside-layer linear model come from the training corpus, whereas many open knowledge sources (lexicon etc.)
+can be used to improve performance (Ng and Low, 2004).
+How can we utilize these knowledge sources effectively?
+We will investigate these problems in the following work.
+Following Jiang et al.
+(2008), we describe segmentation and Joint S&T as below: For a given Chinese sentence appearing as a character sequence: C1: n = C1 C2.

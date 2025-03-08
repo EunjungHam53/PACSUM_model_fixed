@@ -1,0 +1,17 @@
+An Annotation Scheme for Free Word Order Languages Abstract We describe an annotation scheme and a tool developed for creating linguistically annotated corpora for non-configurational languages.
+Since the requirements for such a formalism differ from those posited for configurational languages, several features have been added, influencing the architecture of the scheme.
+The resulting scheme reflects a stratificational notion of language, and makes only minimal assumpabout the interrelation of the particu- •lar representational strata.
+Conclusion As the annotation scheme described in this paper focusses on annotating argument structure rather than constituent trees, it differs from existing treebanks in several aspects.
+These differences can be illustrated by a comparison with the Penn Treebank annotation scheme.
+The following features of our formalism are then of particular importance: The current tagset comprises only 16 node labels and 34 function tags, yet a. finely grinned classification will take place in the near future.
+We have argued that the selected approach is better suited for producing high quality interpreted corpora in languages exhibiting free constituent order.
+In general, the resulting interpreted data also are closer to semantic annotation and more neutral with respect to particular syntactic theories.
+As modern linguistics is also becoming more aware of the importance of larger sets of naturally occurring data., interpreted corpora.
+are a. valuable resource for theoretical and descriptive linguistic research.
+In addition the approach provides empirical material for psycholinguistic investigation, since preferences for the choice of certain syntactic constructions, linea.rizations, and attachments that have been observed in online experiments of language production and comprehension can now be put in relation with the frequency of these alternatives in larger amounts of texts.
+Syntactically annotated corpora of German have been missing until now.
+In the second phase of the project Verbmobil a. treebank for :30,000 German spoken sentences as well as for the same amount of English and Japanese sentences will be created.
+We will closely coordinate the further development of our corpus with the annotation work in Verbmobil and with other German efforts in corpus annotation.
+Since the combinatorics of syntactic constructions creates a. demand for very large corpora., efficiency of annotation is an important.
+criterion for the success of the developed methodology and tools.
+Our annotation tool supplies efficient manipulation and immediate visualization of argument structures.

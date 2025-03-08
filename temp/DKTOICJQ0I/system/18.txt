@@ -1,0 +1,3 @@
+Regarding the system combination study, Henderson and Brill (1999) propose two parser combination schemes: one that selects an entire tree from one of the parsers, and one that builds a new tree by selecting constituents suggested by the initial trees.
+(Henderson and Brill, 1999) perform parse selection by maximizing the expected precision of the selected parse with respect to the set of parses being combined.
+The resulting parsers surpass the best previously published performance results for the Penn Treebank.

@@ -1,0 +1,18 @@
+A Novel Use of Statistical Parsing to Extract Information from Text Abstract Since 1995, a few statistical parsing algorithms have demonstrated a breakthrough in parsing accuracy, as measured against the UPenn TREEBANK as a gold standard.
+In this paper we report adapting a lexic al ized, probabilistic context-free parser to information extraction and evaluate this new technique on MUC-7 template elements and template relations.
+1 Conclusions We have demonstrated, at least for one problem, that a lexicalized, probabilistic context-free parser with head rules (LPCFGHR) can be used effectively for information extraction.
+A single model proved capable of performing all necessary sentential processing, both syntactic and semantic.
+We were able to use the Penn TREEBANK to estimate the syntactic parameters; no additional syntactic training was required.
+The semantic training corpus was produced by students according to a simple set of guidelines.
+This simple semantic annotation was the only source of task knowledge used to configure the model.
+Section 5 compares our approach to others in the literature, in particular that of (Miller et al., 2000).
+The basic approach we described is very similar to the one presented in (Miller et al., 2000); however, there are a few major differences: in our approach, the augmentation of the syntactic tags with semantic tags is straightforward due to the fact that the semantic constituents are matched exactly.
+The approach in (Miller The semantic annotation required by our task is much simpler than that employed by Miller et al.
+(2000).
+One possibly beneficial extension of our work suggested by (Miller et al., 2000) would be to add semantic tags describing relations between entities (slots), in which case the semantic constraints would not be structured strictly on the two levels used in the current approach, respectively frame and slot level.
+Similar to the approach in (Miller et al., 2000), we initialized the SLM statistics from the UPenn Treebank parse trees (about 1 M words of training data) at the first training stage, see Section 3.
+Rule-based methods (Miller et al., 2000) employ a number of linguistic rules to capture relation patterns.
+One interesting system that does not belong to the above class is that of Miller et al.
+(2000), who take the view that relation extraction is just a form of probabilistic parsing where parse trees are augmented to identify all relations.
+Miller et al.
+(2000) augmented syntactic full parse trees with semantic information corresponding to entities and relations, and built generative models for the augmented trees.

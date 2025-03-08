@@ -1,0 +1,16 @@
+A Single Generative Model for Joint Morphological Segmentation and Syntactic Parsing Abstract Morphological processes in Semitic languages deliver space-delimited words which introduce multiple, distinct, syntactic units into the structure of the input sentence.
+These words are in turn highly ambiguous, breaking the assumption underlying most parsers that the yield of a tree for a given sentence is known in advance.
+Here we propose a single joint model for performing both morphological segmentation and syntactic disambiguation which bypasses the associated circularity.
+Using a treebank grammar, a data-driven lexicon, and a linguistically motivated unknown-tokens handling technique our model outperforms previous pipelined, integrated or factorized systems for Hebrew morphological and syntactic processing, yielding an error reduction of 12% over the best published results so far.
+Discussion and Conclusion Employing a PCFG-based generative framework to make both syntactic and morphological disambiguation decisions is not only theoretically clean and linguistically justified and but also probabilistically apropriate and empirically sound.
+The overall performance of our joint framework demonstrates that a probability distribution obtained over mere syntactic contexts using a Treebank grammar and a data-driven lexicon outperforms upper bounds proposed by previous joint disambiguation systems and achieves segmentation and parsing results on a par with state-of-the-art standalone applications results.
+Better grammars are shown here to improve performance on both morphological and syntactic tasks, providing support for the advantage of a joint framework over pipelined or factorized ones.
+We conjecture that this trend may continue by incorporating additional information, e.g., three-dimensional models as proposed by Tsarfaty and Sima’an (2007).
+In the current work morphological analyses and lexical probabilities are derived from a small Treebank, which is by no means the best way to go.
+Using a wide-coverage morphological analyzer based on (Itai et al., 2006) should cater for a better coverage, and incorporating lexical probabilities learned from a big (unannotated) corpus (cf.
+(Levinger et al., 1995; Goldberg et al., ; Adler et al., 2008)) will make the parser more robust and suitable for use in more realistic scenarios.
+Acknowledgments We thank Meni Adler and Michael Elhadad (BGU) for helpful comments and discussion.
+We further thank Khalil Simaan (ILLCUvA) for his careful advise concerning the formal details of the proposal.
+The work of the first author was supported by the Lynn and William Frankel Center for Computer Sciences.
+The work of the second author as well as collaboration visits to Israel was financed by NWO, grant number 017.001.271.
+Finally, we note that simple weighting gives nearly a 2% F1 improvement, whereas Goldberg and Tsarfaty (2008) found that unweighted lattices were more effective for Hebrew.

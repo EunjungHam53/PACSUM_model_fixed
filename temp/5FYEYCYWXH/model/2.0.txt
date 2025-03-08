@@ -1,0 +1,19 @@
+Learning Dependency-Based Compositional Semantics Abstract Compositional question answering begins by mapping questions to logical forms, but training a semantic parser to perform this mapping typically requires the costly annotation of the target logical forms.
+In this paper, we learn to map questions to answers via latent logical forms, which are induced automatically from question-answer pairs.
+In tackling this challenging learning problem, we introduce a new semantic representation which highlights a parallel between dependency syntax and efficient evaluation of logical forms.
+On two stansemantic parsing benchmarks our system obtains the highest published accuracies, despite requiring no annotated logical forms.
+Clarke et al.
+(2010) and Liang et al.
+(2011) describe approaches for learning semantic parsers from questions paired with database answers, while Goldwasser et al.
+(2011) present work on unsupervised learning.
+In particular, Clarke et al.
+(2010) and Liang et al.
+(2011) proposed methods to learn from question-answer pairs alone, which represents a significant advance.
+More recently, Liang et al.
+(2011) proposed DCS for dependency-based compositional semantics, which represents a semantic parse as a tree with nodes representing database elements and operations, and edges representing relational joins.
+GUSP represents meaning by a semantic tree, which is similar to DCS (Liang et al., 2011).
+Matuszek et al.
+[2010], Liang et al.
+[2011], and Chen and Mooney [2011] describe models that learn compositional semantics, but word meanings are symbolic structures rather than patterns of features in the external world.
+One line of work eliminates the need for an annotated logical form, instead using only the correct answer for a database query (Liang et al.
+2011) or even a binary correct/incorrect signal (Clarke et al.

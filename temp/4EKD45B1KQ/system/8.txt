@@ -1,0 +1,3 @@
+KenLM: Faster and Smaller Language Model Queries Abstract We present KenLM, a library that implements two data structures for efficient language model queries, reducing both time and costs.
+The translation systems consisted of phrase tables and lexicalized reordering tables estimated using the standard Moses (Koehn et al., 2007) training pipeline, and 5-gram Kneser-Ney smoothed language models estimated using the SRILM toolkit (Stolcke, 2002), with KenLM (Heafield, 2011) used at runtime.
+We used common tools for phrase-based translation: Moses (Koehn et al., 2007) decoder and tools, SRILM (Stolcke, 2002) and KenLM (Heafield, 2011) for language modeling and GIZA++ (Och and Ney, 2000) for word alignments.

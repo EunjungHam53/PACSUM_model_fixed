@@ -1,0 +1,18 @@
+Vector-based Models of Semantic Composition Abstract This paper proposes a framework for representing the meaning of phrases and sentences in vector space.
+Central to our approach is vector composition which we operationalize in terms of additive and multiplicative functions.
+Under this framework, we introduce a wide range of composition models which we evaluate empirically on a sentence similarity task.
+Experimental results demonstrate that the multiplicative models are superior to the additive alternatives when compared against human judgments.
+Discussion In this paper we presented a general framework for vector-based semantic composition.
+We formulated composition as a function of two vectors and introduced several models based on addition and multiplication.
+Despite the popularity of additive models, our experimental results showed the superiority of models utilizing multiplicative combinations, at least for the sentence similarity task attempted here.
+We conjecture that the additive models are not sensitive to the fine-grained meaning distinctions involved in our materials.
+Previous applications of vector addition to document indexing (Deerwester et al., 1990) or essay grading (Landauer et al., 1997) were more concerned with modeling the gist of a document rather than the meaning of its sentences.
+Importantly, additive models capture composition by considering all vector components representing the meaning of the verb and its subject, whereas multiplicative models consider a subset, namely non-zero components.
+The resulting vector is sparser but expresses more succinctly the meaning of the predicate-argument structure, and thus allows semantic similarity to be modelled more accurately.
+Further research is needed to gain a deeper understanding of vector composition, both in terms of modeling a wider range of structures (e.g., adjectivenoun, noun-noun) and also in terms of exploring the space of models more fully.
+We anticipate that more substantial correlations can be achieved by implementing more sophisticated models from within the framework outlined here.
+In particular, the general class of multiplicative models (see equation (4)) appears to be a fruitful area to explore.
+Future directions include constraining the number of free parameters in linguistically plausible ways and scaling to larger datasets.
+The applications of the framework discussed here are many and varied both for cognitive science and NLP.
+We intend to assess the potential of our composition models on context sensitive semantic priming (Till et al., 1988) and inductive inference (Heit and Rubinstein, 1994).
+NLP tasks that could benefit from composition models include paraphrase identification and context-dependent language modeling (Coccaro and Jurafsky, 1998).

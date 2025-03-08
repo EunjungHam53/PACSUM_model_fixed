@@ -1,0 +1,21 @@
+CHARACTERIZING STRUCTURAL DESCRIPTIONS PRODUCED BY VARIOUS GRAMMATICAL FORMALISMS* Abstract We consider the structural descriptions produced by various grammatical formalisms in terms of the complexity of the paths and the relationship between paths in the sets of structural descriptions that each system can generate.
+In considering the relationship between formalisms, we show that it is useful to abstract away from the details of the formalism, and examine the nature of their derivation process as reflected by properties their trees.
+find that several of the formalisms considered can be seen as being closely related since they have derivation tree sets with the same structure as those produced by Context-Free Grammars On the basis of this observation, we describe a class of formalisms which we call Linear Context- Free Rewriting Systems, and show they are recognizable in polynomial time and generate only semilinear languages.
+Discussion We have studied the structural descriptions (tree sets) that can be assigned by various grammatical systems, and classified these formalisms on the basis of two features: path complexity; and path independence.
+We contrasted formalisms such as CFG's, HG's, TAG's and MCTAG's, with formalisms such as IG's and unificational systems such as LFG's and FUG's.
+We address the question of whether or not a formalism can generate only structural descriptions with independent paths.
+This property reflects an important aspect of the underlying linguistic theory associated with the formalism.
+In a grammar which generates independent paths the derivations of sibling constituents can not share an unbounded amount of information.
+The importance of this property becomes clear in contrasting theories underlying GPSG (Gazdar, Klein, Pulluna, and Sag, 1985), and GB (as described by Berwick, 1984) with those underlying LFG and FUG.
+It is interesting to note, however, that the ability to produce a bounded number of dependent paths (where two dependent paths can share an unbounded amount of information) does not require machinery as powerful as that used in LFG, FUG and IG's.
+As illustrated by MCTAG's, it is possible for a formalism to give tree sets with bounded dependent paths while still sharing the constrained rewriting properties of CFG's, HG's, and TAG's.
+In order to observe the similarity between these constrained systems, it is crucial to abstract away from the details of the structures and operations used by the system.
+The similarities become apparent when they are studied at the level of derivation structures: derivation nee sets of CFG's, HG's, TAG's, and MCTAG's are all local sets.
+Independence of paths at this level reflects context freeness of rewriting and suggests why they can be recognized efficiently.
+As suggested in Section 4.3.2, a derivation with independent paths can be divided into subcomputations with limited sharing of information.
+The approach that Vijay-Shanker et al.
+(1987) and Weir (1988) take, elaborated on by Becker et al.
+(1992), is to identify a very general class of formalisms, which they call linear context-free rewriting systems (CFRSs), and define for this class a large space of structural descriptions which serves as a common ground in which the strong generative capacities of these formalisms can be compared.
+Here we use the standard definition of LCFRS (Vijay-Shanker et al., 1987) and only fix our notation; for a more thorough discussion of this formalism, we refer to the literature.
+Let G be an LCFRS.
+There are many (structural) mildly context-sensitive grammar formalisms, e.g., MCFG, LCFRS, MG, and they have been shown to be equivalent (Vijay-Shanker et al., 1987).

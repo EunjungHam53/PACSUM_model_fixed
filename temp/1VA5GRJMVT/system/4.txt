@@ -1,0 +1,3 @@
+A large number of rules is needed for coverage of the domain, suggesting that a fairly large number of labeled examples should be required to train a classi- However, we show that the use of data can reduce the requirements for supervision to just 7 simple &quot;seed&quot; rules.
+Unsupervised Models for Named Entity Classification Collins Abstract This paper discusses the use of unlabeled examples for the problem of named entity classification.
+The second algorithm extends ideas from boosting algorithms, designed for supervised learning tasks, to the framework suggested by (Blum and Mitchell 98).

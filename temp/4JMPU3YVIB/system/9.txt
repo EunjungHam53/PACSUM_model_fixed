@@ -1,0 +1,3 @@
+An Annotation Scheme for Free Word Order Languages Abstract We describe an annotation scheme and a tool developed for creating linguistically annotated corpora for non-configurational languages.
+The parsing models we present are trained and tested on the NEGRA corpus (Skut et al., 1997), a hand-parsed corpus of German newspaper text containing approximately 20,000 sentences.
+1997) treebank, with the common training, devel 1 10 100 1000 10000 100000 3 4 5 6 7 8 9 Frequency Parsing complexity head-driven optimal head-driven Figure 6: The distribution of parsing complexity among productions in Markovized, head-driven grammars read off from NEGRA-25.

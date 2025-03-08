@@ -1,0 +1,3 @@
+Unsupervised Part-of-Speech Tagging with Bilingual Graph-Based Projections Abstract We describe a novel approach for inducing unsupervised part-of-speech taggers for languages that have no labeled training data, but have translated text in a resource-rich language.
+We use graph-based label propagation for cross-lingual knowledge transfer and use the projected labels as features in an unsupervised model (Berg- Kirkpatrick et al., 2010).
+Our method does not assume any knowledge about the target language (in particular no tagging dictionary is assumed), making it applicable to a wide array of resource-poor languages.
